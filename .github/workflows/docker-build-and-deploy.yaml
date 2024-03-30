@@ -8,7 +8,7 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v4
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
+      uses: docker/setup-buildx-action@v3
     # TODO: consider using setup-qemu (https://github.com/docker/setup-qemu-action) to build for ARM as well as AMD64
     - name: Login to Container Registry
       uses: docker/login-action@v2
