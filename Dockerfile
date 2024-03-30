@@ -13,5 +13,4 @@ RUN adduser --system --no-create-home nonroot
 USER nonroot
 
 EXPOSE 8080
-ENTRYPOINT ["python3"]
-CMD ["hello.py"]
+CMD ["gunicorn", "--bind=0.0.0.0:8080", "hello:create_app()"]
