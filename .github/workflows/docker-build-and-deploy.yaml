@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - name: Check out repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
     # TODO: consider using setup-qemu (https://github.com/docker/setup-qemu-action) to build for ARM as well as AMD64
